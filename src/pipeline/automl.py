@@ -15,7 +15,7 @@ class AutoGluonConfig:
     val_size: float = 15 / 35
     seed: int = 21
     presets: str = "medium_quality"
-    time_limit: int = 10 #NOTE: ALTERAR PARA 900
+    time_limit: int = 900
     eval_metrics: list[str] | None = None
 
 
