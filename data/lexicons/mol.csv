@@ -1,0 +1,66 @@
+,term-or-expression,explicit-or-implicit,pt-brazilian-portuguese,pt-contextual-label,pt-hate-label,pt-deeply-culture-rooted,en-american-english,en-contextual-label,en-hate-label,es-latin-spanish,es-contextual-label,es-hate-label,fr-african-french,fr-contextual-label,fr-hate-Label,ge-german,ge-contextual-label,ge-hate-Label,tu-turkish,tu-contextual-label,tu-hate-Label,Meaning Sources
+0,term,explicit,chorume,1.0,0,0.0,rotten,0.0,0,0,0.0,0,0,0.0,0,Scheiße,0.0,0,bulamaç,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/chorume
+1,term,explicit,baixaria,1.0,0,0.0,fuckfest,1.0,0,vileza,1.0,0,0,0.0,0,Betrüger,1.0,0,değersiz,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/baixaria/
+2,term,explicit,cu,0.0,0,0.0,asshole,0.0,0,culo,0.0,0,cul,0.0,0,Arsch ,0.0,0,büzük,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/cu/
+3,expression,explicit,cu pra tomar,1.0,0,0.0,out on your ass,1.0,0,culo para coger,1.0,0,cul à prendre,1.0,0,Schieb es dir sonst wohin,1.0,0,götüne sok,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/out-on-your-ass?q=out+your+ass
+4,term,explicit,vagabundo,1.0,0,0.0,degenerate,1.0,0,vagabundo ,1.0,0,clochard,1.0,0,Penner,1.0,0,serseri,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/vagabundo/
+5,term,explicit,vagabunda,1.0,sexism,0.0,slut,1.0,sexism,prostituta,1.0,sexism,salope,1.0,sexism,Schlampe,1.0,sexism,orospu,1.0,sexism,"https://www.dicio.com.br/vagabunda/#:~:text=Significado%20de%20Vagabunda,embora%20n%C3%A3o%20viva%20da%20prostitui%C3%A7%C3%A3o."
+6,term,explicit,vagaba,1.0,sexism,0.0,slut,1.0,sexism,prostituta,1.0,sexism,garce,1.0,sexism,Schlampe,1.0,sexism,orospu,1.0,sexism,"https://www.dicio.com.br/vagabunda/#:~:text=Significado%20de%20Vagabunda,embora%20n%C3%A3o%20viva%20da%20prostitui%C3%A7%C3%A3o."
+7,term,explicit,idiota,1.0,0,0.0,stupid,1.0,0,idiota,1.0,0,idiot,1.0,0,Idiot,1.0,0,geri zekalı,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/idiota/
+8,term,explicit,indiota,1.0,0,0.0,stupid,1.0,0,idiota,1.0,0,indien,1.0,0,Idiot,1.0,0,geri zekalı,1.0,0,https://dictionary.cambridge.org/dictionary/english/idiotic
+9,term,explicit,canalha,1.0,0,0.0,jerk,1.0,0,canalla,1.0,0,canaille,1.0,0,Gauner/Schurke ,1.0,0,alçak,1.0,0,https://www.dicio.com.br/canalha/
+10,expression,explicit,filho da puta,1.0,0,0.0,son of a bitch,1.0,0,hijo de puta,1.0,0,fils de pute,1.0,0,Hurensohn,1.0,0,orospu Çocuğu,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles-portugues/son-of-a-bitch
+11,expression,explicit,filha da puta,1.0,0,0.0,motherfucker,1.0,0,hija de puta,1.0,0,enfoiré,1.0,0,Hurentochter,1.0,0,orospu Çocuğu,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/motherfucker
+12,term,explicit,inútil,0.0,0,0.0,loser,0.0,0,inútil,0.0,0,inutile,0.0,0,Nutzlos/Wetlos,0.0,0,kullanışsız,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/in%C3%BAtil/
+13,term,explicit,trouxa,0.0,0,0.0,dumbass,0.0,0,gil,0.0,0,0,0.0,0,Depp ,0.0,0,Aptal,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/trouxa/
+14,term,explicit,foda se,1.0,0,0.0,fuck it,1.0,0,jodete,1.0,0,va te faire foutre,1.0,0,Leck mich (doch) am Arsch / Du kannst mich mal,1.0,0,Kahretsin,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/fuck-you-them-it?q=fuck+it
+15,term,explicit,foda-se,1.0,0,0.0,fuck it,1.0,0,jodete,1.0,0,putain de ,1.0,0,Scheiße/ Verdammt,1.0,0,Siktir et,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/fuck-you-them-it?q=fuck+it
+16,term,explicit,jegue,0.0,0,0.0,dumbass,0.0,0,burro,0.0,0,0,0.0,0,Vollidiot,0.0,0,Sersem,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/jegue/
+17,term,explicit,nojo,0.0,0,0.0,yuck,0.0,0,asco,0.0,0,dégoût,0.0,0,Ekel,0.0,0,İğrenç,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/nojo/
+18,term,explicit,lixo,0.0,0,0.0,garbage,0.0,0,basura,0.0,0,0,0.0,0,Müll / menschlicher Abfall,0.0,0,pislik,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/lixo/
+19,term,explicit,crápula,1.0,0,0.0,bastard,1.0,0,sinverguenza,1.0,0,salaud,1.0,0,Dreckskerl,1.0,0,dolandırıcı,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/cr%C3%A1pula/
+20,term,explicit,bandido,1.0,0,0.0,thug,1.0,0,bandido,1.0,0,bandit,1.0,0,Dieb / Gangster,1.0,0,haydut,1.0,0,https://www.dicio.com.br/bandido/
+21,term,explicit,corja,0.0,0,0.0,scorn,0.0,0,chusma,1.0,0,0,0.0,0,Gesindel / Pack,0.0,0,ayak takımı,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/corja/
+22,term,explicit,trapaceiro,1.0,0,0.0,cheater,1.0,0,tramposo,1.0,0,infidèle,1.0,0,Betrüger,1.0,0,dolandırıcı,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/trapaceiro/
+23,term,explicit,maldito,1.0,0,0.0,damned ,1.0,0,maldito,1.0,0,maudit,1.0,0,Ausgestoßener / Verdammter,1.0,0,lanet olsun,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/maldito/
+24,term,explicit,familicia,1.0,partyism,1.0,0,1.0,partyism,0,0.0,partyism,0,1.0,partyism,0,1.0,partyism,0,1.0,partyism,"""term used to refer to Bolsonaro's family"""
+25,term,explicit,fiofó,1.0,0,0.0,arse,1.0,0,0,0.0,0,0,0.0,0,Arsch,1.0,0,anüs,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/fiof%C3%B3/
+26,term,explicit,arrombar,0.0,0,0.0,to drill,0.0,0,0,0.0,0,0,0.0,0,0,0.0,0,aşağılamak,0.0,0,https://www.dicio.com.br/arrombar/
+27,term,explicit,fuder,1.0,0,0.0,fuck,1.0,0,joder,1.0,0,putain de ,1.0,0,ficken,1.0,0,kahretsin,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/foder/
+28,term,explicit,foder,1.0,0,0.0,fuck,1.0,0,joder,1.0,0,putain de ,1.0,0,ficken,1.0,0,kahretsin,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/foder/
+29,expression,explicit,vá se fuder,1.0,0,0.0,fuck you,1.0,0,vete a la mierda,1.0,0,va te faire foutre !,1.0,0,Du kannst mich mal kreuzweise (am Arsch lecken),1.0,0,git kendini becer,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/fuck-you-them-it?q=fuck+it
+30,term,explicit,doida,1.0,0,0.0,fool,1.0,0,loca,1.0,0,fou,1.0,0,Irrer / Verrückter / Wahnsinniger,1.0,0,deli,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/fool
+31,term,explicit,doido,1.0,0,0.0,fool,1.0,0,loco,1.0,0,folie,1.0,0,geistige Umnachtung,1.0,0,deli,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/fool
+32,term,explicit,miliciano,1.0,0,0.0,militiamen,1.0,0,miliciano,1.0,0,milicien,1.0,0,no-translation,1.0,0,0,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/miliciano/
+33,expression,explicit,sangue suga,0.0,0,0.0,parasite,0.0,0,sanguijuela,0.0,0,0,0.0,0,Parasit/Ungeziefer ,0.0,0,kan emici,0.0,0,https://michaelis.uol.com.br/palavra/w40k8/sanguessuga/
+34,expression,explicit,sanguessuga,0.0,0,0.0,leech,0.0,0,sanguijuela,0.0,0,sangsue,0.0,0,0,0.0,0,sülük,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/leech
+35,expression,explicit,lambem o saco,1.0,0,0.0,ass kissers (adj) / to kiss someone's ass (v),1.0,0,lamben los huevos,1.0,0,il/elles lèchent le sac,1.0,0,Lutsch meinen Schwanz,1.0,0,enayi,1.0,0,https://www.dicionarioinformal.com.br/lambe+saco/
+36,term,explicit,criatura,0.0,0,0.0,creature,0.0,0,criatura,0.0,0,créature,0.0,0,Kreatur,0.0,0,yaratık,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/creature
+37,term,explicit,peste,0.0,0,0.0,plague,0.0,0,plaga,0.0,0,peste,0.0,0,...wie die Pest,0.0,0,veba,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/peste/
+38,term,explicit,ladrão,1.0,0,0.0,thief,1.0,0,ladrón,1.0,0,voleur,1.0,0,Dieb  ,1.0,0,hırsız,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/thief
+39,term,explicit,ladra,1.0,0,0.0,thief,1.0,0,ladrona,1.0,0,0,0.0,0,Diebin,1.0,0,hırsız,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/ladra/
+40,term,explicit,ladrona,1.0,0,0.0,thief,1.0,0,ladrona,1.0,0,0,0.0,0,Dieb,1.0,0,hırsız,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/ladrona/
+41,term,explicit,safado,1.0,0,0.0,manwhore,1.0,0,cabrón,1.0,0,fripouille,1.0,0,Schurke,1.0,0,utanmaz,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/safado/
+42,term,explicit,asqueroso,1.0,0,0.0,disgusting,1.0,0,asqueroso,1.0,0,dégoûtant,1.0,0,bösartig (Person),1.0,0,mide bulandırıcı,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/asqueroso/
+43,term,explicit,asquerosa,1.0,0,0.0,disgusting,1.0,0,asquerosa,1.0,0,dégoûtant,1.0,0,bösartig (Person),1.0,0,kirli,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/asqueroso/
+44,term,explicit,verme,0.0,0,0.0,worm,0.0,0,parasito,0.0,0,ver de terre,0.0,0,Parasit/Ungeziefer ,0.0,0,parazit,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/verme/
+45,term,explicit,traste,1.0,0,0.0,loser,1.0,0,basura,0.0,0,frette,1.0,0,Loser / Verlierer,1.0,0,haydut,1.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/traste/
+46,term,explicit,marmiteira,0.0,0,0.0,grunt,0.0,0,entregador de comida,0.0,0,plateau à muffins,0.0,0,0,0.0,0,öğle yemeğini sefer tası ile alan işçi (kadın),0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/marmiteiro/
+47,term,explicit,marmiteiro,0.0,0,0.0,grunt,0.0,0,entregador de comida,0.0,0,marmite,0.0,0,0,0.0,0,öğle yemeğini sefer tası ile alan işçi,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/marmiteiro/
+48,term,explicit,pedaço de estrume,1.0,0,0.0,piece of shit ,1.0,0,pedazo de mierda,1.0,0,espèce de fumier,1.0,0,Miststück,1.0,0,bok parçası,1.0,0,"https://en.wiktionary.org/wiki/piece_of_shit#:~:text=Noun,and%20get%20your%20money%20back."
+49,term,explicit,burro,0.0,0,0.0,dumbass / dumb / stupid,0.0,0,burro,0.0,0,0,0.0,0,Trottel (?),0.0,0,aptal,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/burro/
+50,term,explicit,desgraça,0.0,0,0.0,doom,0.0,0,desgracia,0.0,0,malheur,0.0,0,Schande,0.0,0,rezalet,0.0,0,https://michaelis.uol.com.br/moderno-portugues/busca/portugues-brasileiro/desgra%C3%A7a/
+51,term,explicit,disgraça,0.0,0,0.0,damnit,0.0,0,deshonra,0.0,0,déshonneur,0.0,0,Schande,0.0,0,rezalet,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/dammit?q=damnit
+52,term,explicit,desgraca,0.0,0,0.0,disgrace,0.0,0,desgracia,0.0,0,0,0.0,0,Schande,0.0,0,rezalet,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/disgrace
+438,term,explicit,bozo,0.0,partyism,1.0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,0,0,0.0,0,https://pt.wikipedia.org/wiki/Bozo
+523,expression,explicit,Intervenção militar no STF,1.0,apology  to  dictatorship,1.0,military intervention in the supreme court,1.0,apology  to  dictatorship,0,0.0,apology  to  dictatorship,intervention militaire à la cour suprême,1.0,apology  to  dictatorship,0,0.0,0,yargıtaya askeri müdehale,1.0,apology  to  dictatorship,https://www.politize.com.br/ditadura-militar-no-brasil/
+617,expression,explicit,dar um fora,1.0,0,0.0,discard / blow something off,1.0,0,0,0.0,0,jeter / se débarrasser de quelque chose,1.0,0,0,0.0,0,0,0.0,0,"https://www.dicionarioinformal.com.br/dar+um+fora/#:~:text=Negar%2C%20recusar%20algo.,novo%20vou%20dar%20um%20fora."
+942,expression,explicit,lavagem cerebral,1.0,0,0.0,brainwash,1.0,0,lavado cerebral,1.0,0,lavage de cerveau,1.0,0,Gehirnwäsche,1.0,0,beyin yıkama,1.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/brainwash
+943,term,explicit,colonialista,0.0,0,0.0,colonialist,0.0,0,colonialista,0.0,0,colonialiste,0.0,0,Kolonist,0.0,0,sömürgeci,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/colonialist
+946,term,explicit,acabado,0.0,0,0.0,wrecked,0.0,0,acabado,0.0,0,épave,0.0,0,zerstört,0.0,0,mahvolmuş,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/wrecked
+947,term,explicit,acabada,0.0,0,0.0,wrecked,0.0,0,acabada,0.0,0,épave,0.0,0,zerstört,0.0,0,mahvolmuş,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/wrecked
+948,term,explicit,pequenez,0.0,0,0.0,pettiness,0.0,0,pequeñez,0.0,0,mesquinerie,0.0,0,Kleinlichkeit,0.0,0,dar görüşlülük,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/pettiness
+949,term,explicit,culpado,0.0,0,0.0,guilty,0.0,0,culpable,0.0,0,coupable,0.0,0,schuldig,0.0,0,suçlu,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/guilty
+950,term,explicit,culpada,0.0,0,0.0,guilty,0.0,0,culpable,0.0,0,coupable,0.0,0,schuldig,0.0,0,suçlu,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/guilty
+951,expression,implicit,tomando no cano,1.0,0,0.0,fucked in the ass,1.0,0,cogiendo por el culo,1.0,0,pendre dans le tuyau,1.0,0,in den Arsch ficken,1.0,0,0,0.0,0,https://www.urbandictionary.com/define.php?term=Fucked%20in%20the%20Ass
+952,expression,implicit,nao tem mae,0.0,0,0.0,motherless,0.0,0,no tiene madre,0.0,0,aucune mère,0.0,0,0,0.0,0,annesi yok,0.0,0,https://dictionary.cambridge.org/pt/dicionario/ingles/motherless
