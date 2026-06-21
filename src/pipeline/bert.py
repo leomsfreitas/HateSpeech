@@ -43,7 +43,7 @@ def make_dataset(tokenizer: BertTokenizer, df: pd.DataFrame, text_column: str, m
         if isinstance(label_columns, list):
             data["labels"] = df[label_columns].values.tolist()
         else:
-            data["labels"] = df[label_columns].tolist()
+            data["labels"] = df[label_columns].astype(int).tolist()
     return Dataset.from_dict(data).with_format("torch")
 
 
@@ -128,8 +128,9 @@ class PipelineBertMultilabel:
         
         return y_true, y_pred
 
-    def predict(self, trainer: Trainer, df: pd.DataFrame, text_column: str) -> pd.DataFrame:
-        dataset = self._make_dataset(df, text_column, with_labels=False)
+    def predict(self, trainer: Trainer, df: pd.DataFrame, text_column: str) -> np.ndarray:
+        has_labels = all(col in df.columns for col in self.config.label_columns)
+        dataset = self._make_dataset(df, text_column, with_labels=has_labels)
         logits = trainer.predict(dataset).predictions
         return (torch.sigmoid(torch.tensor(logits)) > 0.5).int().numpy()
 
@@ -204,8 +205,9 @@ class PipelineBertBinary:
         y_true = pred_output.label_ids
         return y_true, y_pred
 
-    def predict(self, trainer: Trainer, df: pd.DataFrame, text_column: str) -> pd.Series:
-        dataset = self._make_dataset(df, text_column, with_labels=False)
+    def predict(self, trainer: Trainer, df: pd.DataFrame, text_column: str) -> np.ndarray:
+        has_labels = self.label_column in df.columns
+        dataset = self._make_dataset(df, text_column, with_labels=has_labels)
         return torch.tensor(trainer.predict(dataset).predictions).argmax(dim=-1).numpy()
 
     def save(self, trainer: Trainer) -> None:
