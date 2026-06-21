@@ -209,10 +209,10 @@ provided.
 
 | Model | Task | Best config | ITED-BR Macro-F | Download |
 |---|---|---|---|---|
-| BERTimbau | Binary | — | 0.75 | _(Google Drive link coming soon)_ |
-| BERTimbau | Multi-label | — | 0.28 | _(Google Drive link coming soon)_ |
-| AutoML | Binary | MOL+GE | 0.69 | _(Google Drive link coming soon)_ |
-| AutoML | Multi-label | Baseline | 0.55 | _(Google Drive link coming soon)_ |
+| BERTimbau | Binary | — | 0.75 | [Google Drive](https://drive.google.com/file/d/1KI2kykgLwOw7YoiIKZfBjQVrFb8nUPQ0/view?usp=sharing) |
+| BERTimbau | Multi-label | — | 0.28 | [Google Drive](https://drive.google.com/file/d/1sHDnY9TAgEj8psYtASJr_B1mnVg4yZWT/view?usp=sharing) |
+| AutoML | Binary | MOL+GE | 0.69 | [Google Drive](https://drive.google.com/file/d/1EQYuoCvvHrF1YOOjTIWnEAambO51imna/view?usp=sharing) |
+| AutoML | Multi-label | Baseline | 0.55 | [Google Drive](https://drive.google.com/file/d/1UY6hwz3q5jR6CrOqqAo7tA7hEfB3VTlv/view?usp=sharing) |
 
 ## Citation
 
