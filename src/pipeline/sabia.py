@@ -5,15 +5,13 @@ import pandas as pd
 from dataclasses import dataclass, field
 from pathlib import Path
 from openai import OpenAI
-from sklearn.metrics import classification_report
-
 
 
 @dataclass
 class SabiaConfig:
     api_key: str
     label_columns: list[str]
-    prompt=str,
+    prompt: str
     model: str = "sabia-3"
     max_tokens: int = 2
     temperature: float = 0
@@ -47,29 +45,15 @@ class PipelineSabiaBinary:
         except Exception as e:
             return f"erro: {e}"
 
-    def _compute_metrics(self, labels, preds) -> dict:
-        report = classification_report(
-            labels,
-            preds,
-            labels=[0, 1],
-            output_dict=True,
-            zero_division=0,
-        )
-        macro = report["macro avg"]
-        return {
-            f"{self.label_column}_precision": round(macro["precision"], 4),
-            f"{self.label_column}_recall": round(macro["recall"], 4),
-            f"{self.label_column}_f1": round(macro["f1-score"], 4),
-            f"{self.label_column}_support": int(report["1"]["support"]),
-        }
+    def _to_label(self, raw: str) -> int:
+        raw = raw.strip()
+        if raw in {"0", "1"}:
+            return int(raw)
+        return 0
 
     def predict(self, df: pd.DataFrame, text_column: str) -> pd.Series:
-        preds = df[text_column].apply(self._classify).astype(int)
+        preds = df[text_column].apply(self._classify).apply(self._to_label)
         return pd.Series(preds, name=self.label_column, index=df.index)
-
-    def evaluate(self, df: pd.DataFrame, text_column: str) -> dict:
-        preds = self.predict(df, text_column)
-        return self._compute_metrics(df[self.config.label_column].values, preds.values)
 
 
 class PipelineSabiaMultilabel:
@@ -157,31 +141,7 @@ class PipelineSabiaMultilabel:
                 rows.append({"custom_id": custom_id, "raw_response": content, "error": None, **pred})
         return pd.DataFrame(rows)
 
-    def _compute_metrics(self, labels, preds) -> dict:
-        metrics = {}
-        all_precision, all_recall, all_f1 = [], [], []
-        for task_idx, col in enumerate(self.config.label_columns):
-            report = classification_report(
-                labels[:, task_idx],
-                preds[:, task_idx],
-                labels=[0, 1],
-                output_dict=True,
-                zero_division=0,
-            )
-            macro = report["macro avg"]
-            metrics[f"{col}_precision"] = round(macro["precision"], 4)
-            metrics[f"{col}_recall"] = round(macro["recall"], 4)
-            metrics[f"{col}_f1"] = round(macro["f1-score"], 4)
-            metrics[f"{col}_support"] = int(report["1"]["support"])
-            all_precision.append(macro["precision"])
-            all_recall.append(macro["recall"])
-            all_f1.append(macro["f1-score"])
-        metrics["macro_avg_precision"] = round(np.mean(all_precision), 4)
-        metrics["macro_avg_recall"] = round(np.mean(all_recall), 4)
-        metrics["macro_avg_f1"] = round(np.mean(all_f1), 4)
-        return metrics
-
-    def predict(self, df: pd.DataFrame, text_column: str) -> pd.DataFrame:
+    def predict(self, df: pd.DataFrame, text_column: str) -> np.ndarray:
         if self.config.workdir is None:
             raise ValueError("workdir precisa ser definido no config para rodar o batch.")
         
@@ -199,14 +159,8 @@ class PipelineSabiaMultilabel:
             raise RuntimeError(f"Batch terminou com status={batch.status}")
 
         self._download_file(batch.output_file_id, output_path)
-        pred_df = self._read_output(output_path)
+        pred_df = self._read_output(output_path).set_index("custom_id")
 
-        df = df.reset_index(drop=True).copy()
-        df["custom_id"] = [f"tweet-{i}" for i in range(len(df))]
-        return df.merge(pred_df, on="custom_id", how="left")
-
-    def evaluate(self, df: pd.DataFrame, text_column: str) -> dict:
-        result = self.predict(df, text_column)
-        labels = df[self.config.label_columns].values
-        preds = result[self.config.label_columns].values
-        return self._compute_metrics(labels, preds)
+        order = [f"tweet-{i}" for i in range(len(df))]
+        pred_df = pred_df.reindex(order)
+        return pred_df[self.config.label_columns].fillna(0).astype(int).values

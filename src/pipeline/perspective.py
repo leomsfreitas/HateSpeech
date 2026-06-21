@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 from dataclasses import dataclass, field
 from itertools import chain
-from sklearn.metrics import classification_report
 
 from src.utils.split import multiclass_split
 
@@ -50,32 +49,12 @@ class PipelinePerspective:
             print(f"Erro: {e}")
             return None
 
-    def _compute_metrics(self, labels, preds) -> dict:
-        report = classification_report(
-            labels,
-            preds,
-            labels=[0, 1],
-            output_dict=True,
-            zero_division=0,
-        )
-        macro = report["macro avg"]
-        return {
-            f"{self.config.label_column}_precision": round(macro["precision"], 4),
-            f"{self.config.label_column}_recall": round(macro["recall"], 4),
-            f"{self.config.label_column}_f1": round(macro["f1-score"], 4),
-            f"{self.config.label_column}_support": int(report["1"]["support"]),
-        }
-
-    def predict(self, df: pd.DataFrame, text_column: str) -> pd.DataFrame:
+    def predict(self, df: pd.DataFrame, text_column: str) -> np.ndarray:
         scores_list = []
         for i in range(0, len(df), self.config.chunk_size):
             chunk = df[text_column].iloc[i:i + self.config.chunk_size]
             scores_list.append(chunk.apply(self._analyze))
             time.sleep(self.config.sleep_interval)
         flat = list(chain.from_iterable(scores_list))
-        return pd.DataFrame(flat, index=df.index)
-
-    def evaluate(self, df: pd.DataFrame, text_column: str) -> dict:
-        scores = self.predict(df, text_column)
-        preds = (scores[self.config.attributes[0]] >= self.config.threshold).astype(int).values
-        return self._compute_metrics(df[self.config.label_column].values, preds)
+        scores = pd.DataFrame(flat, index=df.index)
+        return (scores[self.config.attributes[0]] >= self.config.threshold).astype(int).values
