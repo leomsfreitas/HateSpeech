@@ -16,6 +16,7 @@ class AutoGluonConfig:
     seed: int = 21
     presets: str = "medium_quality"
     time_limit: int = 900
+    gpu: int = 1
     eval_metrics: list[str] | None = None
 
 
@@ -37,6 +38,7 @@ class PipelineAutoGluonMultilabel(MultilabelPredictor):
     def train(self, train_df: pd.DataFrame, val_df: pd.DataFrame) -> None:
         super().fit(
             train_data=train_df,
+            ag_args_fit={'num_gpus': self.config.gpu},
             tuning_data=val_df,
             presets=self.config.presets,
             time_limit=self.config.time_limit,
@@ -70,6 +72,7 @@ class PipelineAutoGluonBinary:
     def train(self, train_df: pd.DataFrame, val_df: pd.DataFrame) -> None:
         self.predictor.fit(
             train_data=train_df,
+            ag_args_fit={'num_gpus': self.config.gpu},
             tuning_data=val_df,
             presets=self.config.presets,
             time_limit=self.config.time_limit,
